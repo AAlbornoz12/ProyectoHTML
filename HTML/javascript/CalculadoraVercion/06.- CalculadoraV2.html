@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora Verición 2</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="CalculaJs/CalculadoraV2.js">
+	</script>
+</head>
+<body>
+	<p>calculadora</p>
+	<table id="calculadora">
+		<tr>
+			<td colspan="4">
+				<input type="text" id="valor_numero" maxlength="20" value="0" class="caja_valor" readonly="false">
+			</td>
+		</tr>
+		<tr>
+	
+			<td>
+				<input type="Button" id="7" value="7" class="boton" onclick="darNumero('7')">
+			</td>
+			<td>
+				<input type="Button" id="8" value="8" class="boton" onclick="darNumero('8')">
+			</td>
+			<td>
+				<input type="Button" id="9" value="9" class="boton" onclick="darNumero('9')">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="Button" id="4" value="4" class="boton" onclick="darNumero('4')">
+			</td>
+			<td>
+				<input type="Button" id="5" value="5" class="boton" onclick="darNumero('5')">
+			</td>
+			<td>
+				<input type="Button" id="6" value="6" class="boton" onclick="darNumero('6')">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="Button" id="1" value="1" class="boton" onclick="darNumero('1')">
+			</td>
+			<td>
+				<input type="Button" id="2" value="2" class="boton" onclick="darNumero('2')">
+			</td>
+			<td>
+				<input type="Button" id="3" value="3" class="boton" onclick="darNumero('3')">
+			</td>
+		<tr>
+			<td>
+				<input type="Button" id="0" value="0" class="boton" onclick="darNumero('0')">
+			</td>
+			<td>
+				<input type="Button" id="," value="," class="boton" onclick="darComa(',')">
+			</td>
+			<td>
+				<input type="Button" id="C" value="C" class="boton" onclick="darC('C')">
+			</td>
+		</tr>
+		</tr>
+		<tr>
+			<td >
+				<input type="Button" name="Dividir" value="/" class="boton_funcion1" onclick="operar(4)">
+			</td>
+			<td>
+				<input type="Button" name="Multiplicar" value="x" class="boton_funcion2" onclick="operar(3)">
+			</td>
+			<td>
+				<input type="Button" name="Restar" value="-" class="boton_funcion3" onclick="operar(2)">
+			</td>
+			<td>
+				<input type="Button" name="Sumar" value="+" class="boton_funcion2" onclick="operar(1)">
+			</td>
+			<td>
+				<input type="Button" name="igual" value="=" class="boton_funcion1" onclick="esIgual()">
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
